@@ -1,0 +1,76 @@
+//  font
+@import 'assets/fonts/Inter Web/inter.css';
+
+$white: #ffffff;
+$red: #db2f20;
+$grey: #00000029;
+$purple: #5f259f;
+$purple75: #c7b3dd;
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: $red;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: $purple;
+}
+
+.outer {
+  background-image: url('~/assets/images/background-office.png');
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .inner {
+    display: flex;
+    flex-direction: column;
+    max-width: 1068px;
+    width: 70%;
+  }
+}
+
+.cost-variable {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 32px;
+  &-item {
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: $white;
+    box-shadow: 0px 3px 6px $grey;
+    width: 324px;
+    height: 72px;
+    border-radius: 100px;
+    img {
+      width: 32px;
+      height: 32px;
+      color: $purple;
+    }
+
+    &_estimate-text {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 11px;
+      line-height: 1em;
+      span:first-child {
+        opacity: 0.4;
+      }
+    }
+  }
+}
