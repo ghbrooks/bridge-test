@@ -9,9 +9,12 @@ module.exports = {
     requireConfigFile: false,
   },
   extends: ['@nuxtjs', 'plugin:nuxt/recommended', 'prettier'],
-  plugins: [],
+  plugins: [
+    "stylelint-order"
+  ],
   // add your custom rules here
   rules: {    
-    'vue/multi-word-component-names': 'off'
+    'vue/multi-word-component-names': 'off',
+    "order/properties-alphabetical-order": true
  }
 }
